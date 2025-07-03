@@ -6,7 +6,7 @@ public class SquareMover : MonoBehaviour
 {
 
     //Class variables go here:
-    public float speed;
+    public float speed; //bonus challenge!
 
     // Start is called before the first frame update
     void Start()
