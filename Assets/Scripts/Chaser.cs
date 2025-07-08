@@ -44,7 +44,7 @@ public class Chaser : MonoBehaviour
         Vector3 target = lastClickedPosition;
         Vector3 directionToMove = target - start;
 
-        //transform.position = transform.position + directionToMove * speed;
+        transform.position = transform.position + directionToMove * speed;
 
         Vector3 chaserPositionInScreenSpace = gameCamera.WorldToScreenPoint(transform.position);
 
