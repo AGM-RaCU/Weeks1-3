@@ -13,6 +13,8 @@ public class ShredderSpinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 bladeSpin = transform.eulerAngles;
+        bladeSpin.z += 1f;
+        transform.eulerAngles = bladeSpin;
     }
 }

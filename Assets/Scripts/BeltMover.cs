@@ -13,6 +13,8 @@ public class BeltMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 beltPosition = transform.position + Vector3.right * 0.01f;
+
+        transform.position = beltPosition;
     }
 }
