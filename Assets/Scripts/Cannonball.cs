@@ -12,7 +12,7 @@ public class Cannonball : MonoBehaviour
 
     private float timePassed;
 
-    public float moveDuration;
+    public float cannonballMoveDuration;
 
 
 
@@ -23,12 +23,12 @@ public class Cannonball : MonoBehaviour
         endPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         endPosition.z = 0;
 
-        Destroy(gameObject, moveDuration);
+        Destroy(gameObject, cannonballMoveDuration);
     }
     // Update is called once per frame
     void Update()
     {
-        timePassed += Time.deltaTime / moveDuration;
+        timePassed += Time.deltaTime / cannonballMoveDuration;
 
         Vector3 output = Vector3.Lerp(startPosition, endPosition, timePassed);
         transform.position = output;

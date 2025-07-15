@@ -6,6 +6,8 @@ public class Cannon : MonoBehaviour
 {
 
     public GameObject cannonballPrefab;
+    public float cannonballSpeed;
+    public Color cannonballColour;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,14 @@ public class Cannon : MonoBehaviour
 
         if(leftClick)
         {
-            Instantiate(cannonballPrefab, transform.position, Quaternion.identity);
+            GameObject spawnedCannonball = Instantiate(cannonballPrefab, transform.position, Quaternion.identity);
+            Debug.Log(spawnedCannonball.name);
+            SpriteRenderer cannonballRenderer = spawnedCannonball.GetComponent<SpriteRenderer>();
+            cannonballRenderer.color = cannonballColour;
+
+            //set the speed? what has the speed?
+            Cannonball cannonballScript = spawnedCannonball.GetComponent<Cannonball>();
+            cannonballScript.cannonballMoveDuration = cannonballSpeed;
         }
     }
 }
