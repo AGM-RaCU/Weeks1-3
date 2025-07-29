@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Cannonball : MonoBehaviour
 {
-    //Position where the object spawns
+
+    //Position that the object spawned
     private Vector3 startPosition;
 
     //Position of the mouse when spawned
@@ -12,9 +13,7 @@ public class Cannonball : MonoBehaviour
 
     private float timePassed;
 
-    public float cannonballMoveDuration;
-
-
+    public float moveDuration;
 
     // Start is called before the first frame update
     void Start()
@@ -23,16 +22,16 @@ public class Cannonball : MonoBehaviour
         endPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         endPosition.z = 0;
 
-        Destroy(gameObject, cannonballMoveDuration);
+        Destroy(gameObject, moveDuration);
     }
+
     // Update is called once per frame
     void Update()
     {
-        timePassed += Time.deltaTime / cannonballMoveDuration;
+        timePassed += Time.deltaTime / moveDuration;
 
         Vector3 output = Vector3.Lerp(startPosition, endPosition, timePassed);
         transform.position = output;
-
     }
 }
 
