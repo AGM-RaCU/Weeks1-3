@@ -17,10 +17,7 @@ public class BookMover : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0)) //mouse press turns bool true to begin functionality
-        {
-            MachineOn = true; //"the machine turns on"; belt pulls book along
-        }
+        //buttonOn();
 
         if (MachineOn) //Functionality starts when bool is true
         {
@@ -36,5 +33,11 @@ public class BookMover : MonoBehaviour
 
         }
 
+    }
+
+    public void buttonOn() //button press turns bool true to begin functionality
+    {
+         MachineOn = true; //"the machine turns on"; belt pulls book
+       
     }
 }
