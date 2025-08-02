@@ -16,7 +16,7 @@ public class ShredderSpinner : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
         Vector3 bladeSpin = transform.eulerAngles;
-        bladeSpin.z += 1f;
+        bladeSpin.z += 5f;
         transform.eulerAngles = bladeSpin;   
         }
      

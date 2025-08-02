@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1582323599566727384}
   - component: {fileID: 7649711696578535220}
   - component: {fileID: 3255405123086289507}
+  - component: {fileID: 6738756039253772206}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7387417101685288764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.449999, y: -1, z: 0}
+  m_LocalPosition: {x: -7.5, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d65b2703995cc8344871027c1b5885ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45465b6aca5406d448ac4ab42e78f08e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,3 +98,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f606964272f70f42a4bcb3e171df8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6738756039253772206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387417101685288764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11838dd9d7797a84a8689f9b851db60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shreddedPaper: {fileID: 21300000, guid: fa2751ce62409db47aaec1db27e07c2f, type: 3}
+  wastedPaper: {fileID: 21300000, guid: 0457cf0cafa559947ba27b0ae6a31d60, type: 3}
