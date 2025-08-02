@@ -284,6 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67981329}
   - component: {fileID: 67981328}
+  - component: {fileID: 67981330}
   m_Layer: 0
   m_Name: BookSpawner
   m_TagString: Untagged
@@ -319,6 +320,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &67981330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67981327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53eb6c51297dcd44934d50b2a7e40f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookChangerSlider: {fileID: 837494926}
+  bookSprite: {fileID: 7649711696578535220, guid: e21307660ae48a44b85f96ff30535992, type: 3}
+  book1sprite: {fileID: 21300000, guid: 45465b6aca5406d448ac4ab42e78f08e, type: 3}
+  book2sprite: {fileID: 21300000, guid: eb99a2335dce5e04b97b29675ddef408, type: 3}
+  book3sprite: {fileID: 21300000, guid: d65b2703995cc8344871027c1b5885ae, type: 3}
 --- !u!1 &185690605
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,8 +607,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 659154340}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 2
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
