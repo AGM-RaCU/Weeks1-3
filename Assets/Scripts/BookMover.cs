@@ -6,7 +6,7 @@ using UnityEngine;
 public class BookMover : MonoBehaviour
 {
 
-    public bool MachineOn = false; //Bool binary to change state between moving or not
+    //public bool MachineOn = false; //Bool binary to change state between moving or not
     //public UnityEvent buttonPressed;
 
     // Start is called before the first frame update
@@ -21,8 +21,8 @@ public class BookMover : MonoBehaviour
 
         //buttonOn();
 
-        if (MachineOn) //Functionality starts when bool is true
-        {
+        //if (MachineOn) //Functionality starts when bool is true
+        //{
             Vector3 bookPosition = transform.position + Vector3.right * 0.01f; //vector3 defining how the book will move to the right
 
             transform.position = bookPosition; //applies vector3 to book's transform position, book moves
@@ -33,13 +33,13 @@ public class BookMover : MonoBehaviour
             }
 
 
-        }
+        //}
 
     }
 
-    public void buttonOn() //button press turns bool true to begin functionality
-    {
-        MachineOn = true; //"the machine turns on"; belt pulls book
+    //public void buttonOn() //button press turns bool true to begin functionality
+    //{
+        //MachineOn = true; //"the machine turns on"; belt pulls book
         //Debug.Log("button works");
         //buttonPressed.Invoke();
         //Debug.Log("event called");
@@ -47,5 +47,5 @@ public class BookMover : MonoBehaviour
         //transform.position = bookPosition;
         //Debug.Log("literallywhat");
 
-    }
+    //}
 }
