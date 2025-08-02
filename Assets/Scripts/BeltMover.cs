@@ -5,7 +5,7 @@ using UnityEngine;
 public class BeltMover : MonoBehaviour
 {
     public bool MachineOn = false; //Bool binary to change state between moving or not
-    public Vector3 respawnPoint;
+    public Vector3 respawnPoint; //Vector3 transform i can use to loop the conveyor belts, by making it go back to this as a loop point
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +16,6 @@ public class BeltMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0)) //mouse press turns bool true to begin functionality
-        //{
-          //  MachineOn = true; //"the machine turns on"; belt starts moving
-        //}
 
         if (MachineOn) //Functionality starts when bool is true
         {
@@ -30,7 +26,7 @@ public class BeltMover : MonoBehaviour
 
             if (transform.position.x > 8) //check for book's location
             {
-                transform.position = respawnPoint;
+                transform.position = respawnPoint; // after passing from one edge of the  to the other, return to the loop point to loop the animation/movement
             }
 
         }

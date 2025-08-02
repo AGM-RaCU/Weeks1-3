@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BookShredding : MonoBehaviour
 {
-    SpriteRenderer bookSprite;
+    SpriteRenderer bookSprite; //book prefab spriterenderer
 
-    public Sprite shreddedPaper, wastedPaper;
+    public Sprite shreddedPaper, wastedPaper; //shredded and wasted paper sprites
 
     // Start is called before the first frame update
     void Start()
@@ -17,21 +17,21 @@ public class BookShredding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bookSprite = GetComponent<SpriteRenderer>();
+        bookSprite = GetComponent<SpriteRenderer>(); //access the spriterenderer and set book sprite variable
 
         if (transform.position.x > 5) //check for book's location
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(0)) //check for left mouse input
             {
-                bookSprite.sprite = shreddedPaper; //destroy the book game object when passing through shredder
+                bookSprite.sprite = shreddedPaper; //change book sprite to shredded paper sprite 
             }
         }
 
         if (transform.position.x > 8) //check for book's location
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(0)) //check for left mouse input
             {
-                bookSprite.sprite = wastedPaper; //destroy the book game object when passing through shredder
+                bookSprite.sprite = wastedPaper; //change book sprite to wasted paper sprite
             }
         }
     }

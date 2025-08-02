@@ -13,11 +13,11 @@ public class ShredderSpinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(0)) //check for left mouse input
         {
-        Vector3 bladeSpin = transform.eulerAngles;
-        bladeSpin.z += 5f;
-        transform.eulerAngles = bladeSpin;   
+        Vector3 bladeSpin = transform.eulerAngles; //Vector3 to define rotation
+        bladeSpin.z += 5f; //rotation speed
+        transform.eulerAngles = bladeSpin;   //rotate the saw blade 
         }
      
     }

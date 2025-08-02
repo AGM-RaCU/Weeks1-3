@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BookSpawner : MonoBehaviour
 {
-    public GameObject bookPrefab;
+    public GameObject bookPrefab; //book prefab to spawn
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,6 @@ public class BookSpawner : MonoBehaviour
 
     public void buttonOn()
     {
-        Instantiate(bookPrefab);
+        Instantiate(bookPrefab); //instantiate a clone of the book prefab
     }
 }

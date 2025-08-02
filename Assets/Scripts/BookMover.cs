@@ -20,7 +20,7 @@ public class BookMover : MonoBehaviour
 
             if (transform.position.x > 10) //check for book's location
             {
-                Destroy(gameObject); //destroy the book game object when passing through shredder
+                Destroy(gameObject); //destroy the book game object after leaving the screen
             }
 
     }
